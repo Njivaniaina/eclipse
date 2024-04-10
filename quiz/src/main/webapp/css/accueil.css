@@ -1,0 +1,185 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    background: rgb(222, 221, 218);
+}
+
+header {
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    transition: 0.5s ease;
+    background-color: rgb(133, 133, 133);
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+
+header .title {
+    color: rgb(255, 255, 255);
+    font-size: 1.7em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+header .navigator {
+    position: relative;
+}
+
+#inscription {
+    position: relative;
+    font-size: 1.3em;
+    font-weight: 500;
+    padding: 10px;
+    margin: 40px 10px;
+    color: rgb(0, 0, 0);
+    transition: 0.3s ease;
+    border: none;
+    border-radius: 10px;
+}
+
+#inscription:hover {
+    background: rgb(180, 180, 180);
+}
+
+#connexion {
+    font-size: 1.3em;
+    font-weight: 500;
+    padding: 10px;
+    margin: 40px 10px;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 10px;
+    background: transparent;
+}
+
+#connexion:hover {
+    background: rgb(185, 185, 185);
+}
+
+/*
+    Pour l'accueil
+*/
+
+.content {
+    display: block;
+    margin: 100px 100px;
+}
+
+.content-item {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content-item h1 {
+    color: rgb(0, 0, 0);
+    font-size: 3em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+.context {
+    margin: 10vh 30vw;
+    font-size: 1.3em;
+}
+
+.content a {
+    padding: 15px;
+    font-size: 1.5em;
+    background-color: rgb(112, 112, 112);
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+}
+
+/*
+    Pour le connexion et l'inscription
+*/
+
+.connexion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+    display: none;
+}
+
+.inscription {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+    display: none;
+}
+
+.form_connexion, .form_inscription {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(124, 124, 124);
+    width: 30vw;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    text-align: center;
+}
+
+.form_connexion {
+    height: 45vh;
+}
+
+.form_inscription {
+    height: 55vh;
+}
+
+.form_connexion h1, .form_inscription h1{
+    color: black;
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+
+.form_connexion form label, .form_inscription  form label{
+    font-size: 18px;
+    color: white; 
+    margin: 10px;
+}
+
+.enter{
+    height: 30px;
+    width: 200px;
+    border-radius: 10px;
+    font-size: 18px;
+    margin: 10px;
+    padding: 5px;
+}
+
+.submit{
+    background-color: rgb(180, 180, 180);
+    text-align: center;
+    font-size: 18px;
+    height: 35px;
+    width: 130px;
+    border-radius: 10px;
+}
+.submit:hover{
+    background-color: white;
+}

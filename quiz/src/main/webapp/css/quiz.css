@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    background: rgb(222, 221, 218);
+}
+
+header {
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    transition: 0.5s ease;
+    background-color: rgb(133, 133, 133);
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+
+header .title {
+    color: rgb(255, 255, 255);
+    font-size: 1.7em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+header .navigator {
+    position: relative;
+}
+
+#accueil, #propos, #start {
+    font-size: 1.3em;
+    font-weight: 500;
+    padding: 10px;
+    margin: 40px 10px;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 10px;
+    background: transparent;
+}
+
+#accueil:hover, #propos:hover, #start:hover {
+    background: rgb(185, 185, 185);
+}
+
+.accueil {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+    width: 100%;
+}
+
+.start, .content {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+    display: none;
+}
+
+.content-item {
+	position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.content-item h1 {
+    color: rgb(0, 0, 0);
+    font-size: 3em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+.context {
+    margin: 10vh 30vw;
+    font-size: 1.3em;
+}
+
+.accueil a {
+    padding: 15px;
+    font-size: 1.5em;
+    background-color: rgb(112, 112, 112);
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+}
+
+.deconnection {
+	margin: 20px;
+}
+#deconnection {
+	height: 40px;
+	border-radius: 10px;
+	font-size: 1.5em;
+}
+
+#commencer_bouton {
+	padding: 15px;
+    font-size: 1.5em;
+    background-color: rgb(112, 112, 112);
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+}
